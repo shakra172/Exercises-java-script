@@ -1,0 +1,10 @@
+{
+    "id" : 1,
+    "name" : "Updishakuur",
+    "city" : "Mogdisho",
+    "orders" : [
+        {"id" : 1, "product" : "Laptop", "price" : 1199},
+        {"id" : 2, "product" : "Iphone", "price" : 1500},
+        {"id" : 3, "product" : "Samsung A15", "price" : 299}
+    ]
+}
