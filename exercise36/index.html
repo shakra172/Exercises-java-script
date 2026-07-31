@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise36</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        #colorPreview {
+            width: 300px;
+            height: 250px;
+            border: 1px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            background-color: #ffffff;
+            margin-bottom: 30px;
+        }
+
+        #historyContainer {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .history-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #fff;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .history-color-box {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #000;
+        }
+
+        #clearHistoryBtn {
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Interactive Color Picker</h1>
+
+    <div class="picker-container">
+        <label for="colorInput">Choose a color:</label>
+        <input type="color" id="colorInput" class="js-color-input" value="#000000">
+    </div>
+
+    
+    <div id="colorPreview" class="js-color-preview">
+        Color Preview
+    </div>
+
+    <h2>Color History</h2>
+    <div id="historyContainer" class="js-history-container"></div>
+
+    <button id="clearHistoryBtn" class="js-clear-btn">Clear History</button>
+
+    <script src="main.js"></script>
+</body>
+</html>
